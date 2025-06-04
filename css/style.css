@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family:Verdana, Tahoma, sans-serif;
 }
@@ -15,22 +16,19 @@ header {
 
 
 .logo{
-    width: 104px;
-    height: 97px;
+    max-width: 100%;
      padding: 3px;
      margin: 17px;
      border: 2px solid rgb(255, 255, 255);
-     text-align:left;
-    
+     text-align:left;    
 } 
 
+
 .recetario{
-   width: 70%;
+   max-width: 40%;
    margin: 0px auto;
    text-align: center;
-
 }
-
 
 nav {
     margin: 10px;
@@ -46,9 +44,9 @@ nav {
 /* FIN DL ENCABEZADO */
 
 #cont{
-   width: 99%;
    height: 625px;
    margin: 10px ;
+   margin-right: 10px;
    border: 1px solid #000000;
 
 }
@@ -57,7 +55,7 @@ nav {
 
    /*FORMULARIO BUSQUEDA*/ 
    .formulario{
-     width: 460px;
+     width: 98%;
      height: 85px;
      margin: 10px ;
     }
@@ -70,15 +68,16 @@ nav {
 /*carga de receta*/
 .article1{
    /*width: 460px;*/
-   width: 31%;
+   width: 39%;
    height: 500px;
    margin: 10px ;
    border: 1px solid #000000;
+   
 }
 
 #cont_carga{
-    width: 10%;
-    height: auto;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 h4{
@@ -89,33 +88,38 @@ h4{
     width: 50%;
 }
 .img_carga{
-     
-     margin: 5px ;
+     margin: 5px;
+     margin-right:5px ;
      border: 1pc solid #ebdbd5;
+     max-width: 97%;
 }
 
 /* FIN carga de receta*/
 
+/*OTRAS RECETAS*/
+
 .article2{
    /*width: 998px;*/
-   width: 67%;
+   width: 58%;
    height: 510px;
-   margin-left: 487px ;
-
+   margin-left: 41% ;
    border: 1px solid #000000;
 }
 
 .img_receta{
-    
+    width: 31%;
     margin: 10px;
+    display: block;
     border: 5px solid rgb(211, 184, 184);
 }
 
 #cont_img{
+    max-width: 100%;
+    overflow: auto;
     width: 90%;
     margin: 10px;
 }
-
+/*FIN OTRAS RECETAS*/
 /*FIN DE MAIN*/
 
 /*footer*/
@@ -126,3 +130,30 @@ footer{
     background-color: #ebdbd5;
 }
 /*fin del footer*/
+
+/*Estilos para */
+@media screen and (min-width: 768px) {
+
+.logo{
+     width: 104px;
+     padding: 3px;
+     margin: 17px;
+     border: 2px solid rgb(255, 255, 255);
+     text-align:left;    
+} 
+ 
+
+.recetario{
+   width: 2px;
+   margin: 0px auto;
+   text-align: center;
+}
+
+nav {
+    margin: 10px;
+
+    text-align: right ;
+
+}
+
+}
