@@ -52,16 +52,15 @@ nav {
 }
 /* FIN DL ENCABEZADO */
 
+/*cuerpo*/
 #cont{
-   height: 625px;
    margin: 10px ;
    margin-right: 10px;
    border: 1px solid #000000;
-
 }
 
-/*MAIN*/
 
+  /*MAIN*/ 
    /*FORMULARIO BUSQUEDA*/ 
    .formulario{
      width: 98%;
@@ -74,19 +73,24 @@ nav {
     }
    /*FIN FORMULARIO BUSQUEDA*/
 
-/*carga de receta*/
-.article1{
-   /*width: 460px;*/
-   width: 39%;
-   height: 500px;
-   margin: 10px ;
-   border: 1px solid #000000;
-   
+#cuerpo{
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    justify-content: space-between;
 }
 
-#cont_carga{
-    max-width: 100%;
-    overflow: hidden;
+img:hover{
+    transform: scale(0.9);
+}
+   /*carga de receta*/
+
+.article1{
+   width: 200px;
+   height: 240px;
+   padding: 5px;
+   margin: 5px;
+   border: 1px solid #000000;
 }
 
 h4{
@@ -96,51 +100,46 @@ h4{
 .a{
     width: 50%;
 }
-.img_carga{
-     margin: 5px;
-     margin-right:5px ;
-     border: 1pc solid #ebdbd5;
-     max-width: 97%;
+#cont_carga{
+    overflow: hidden;
 }
 
-/* FIN carga de receta*/
+.img_carga{
+     margin: 3px;
+     border: 1pc solid #ebdbd5;
+     max-width: 97%;    
+}
+   /* FIN carga de receta*/
 
-/*OTRAS RECETAS*/
+   /*OTRAS RECETAS*/
 
 .article2{
-   /*width: 998px;*/
-   width: 58%;
-   height: 510px;
-   margin-left: 41% ;
+   width: 90%;
+   
+   margin: 5px;
    border: 1px solid #000000;
-}
-
-.img_receta{
-    width: 31%;
-    margin: 10px;
-    display: block;
-    border: 5px solid rgb(211, 184, 184);
+   overflow: hidden;
+   display: inline-block
 }
 
 #cont_img{
-    max-width: 100%;
-    overflow: auto;
-    width: 90%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.img_receta{
+    width: 300px;
     margin: 10px;
+    border: 5px solid rgb(211, 184, 184);
 }
 /*FIN OTRAS RECETAS*/
 /*FIN DE MAIN*/
 
-/*footer*/
-footer{
-    text-align: center;
-    margin: auto;
-    padding: 20px;
-    background-color: #ebdbd5;
-}
-/*fin del footer*/
 
-
+/*FIN cuerpo*/
+  
 
 /*Estilos para pag max 780px*/
 
