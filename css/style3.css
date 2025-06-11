@@ -28,7 +28,9 @@ img {
      margin: 19px;
      border: 2px solid rgb(255, 255, 255);        
 } 
-
+.logo img:hover{
+    transform: none;
+}
 .recetario{
     display: flex; 
     justify-content:center;
@@ -36,6 +38,11 @@ img {
     margin: 0px auto;
     padding: 0px;
 }
+
+.recetario img:hover{
+    transform: none;
+}
+
 
 nav { 
     display: flex;     

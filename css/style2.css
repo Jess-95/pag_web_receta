@@ -31,13 +31,19 @@ img {
         
 } 
 
-
+.logo img:hover{
+    transform: none;
+}
 .recetario{
     display: flex; 
     justify-content:center;
     align-items: center;
     margin: 0px auto;
     padding: 0px;
+}
+
+.recetario img:hover{
+    transform: none;
 }
 
 
