@@ -66,13 +66,29 @@ nav {
 #cont{
    margin: 10px ;
    margin-right: 10px;
-   border: 1px solid #000000;
    display: flex;
    flex-direction: row;
 }
 
   /*MAIN*/ 
    /*FORMULARIO BUSQUEDA*/ 
+   #busca{
+    width: auto;
+    height: 150px;
+    display: flex;
+    background-image: url(/img/fondo.png);
+    background-size: 100%;
+   }
+   
+   .navbar{
+    margin: auto;
+    width: 50%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    }
+
    .formulario{
      width: 98%;
      height: 85px;
@@ -91,14 +107,14 @@ nav {
     margin: 0%;
     padding: 0%;
     display: flex;
-    justify-content: space-between;
+    
 }
 
     img:hover{
     transform: scale(0.9);
 }
 
- /*carga de receta*/
+ /*carga de receta
 
 .article1{
    width: 200px;
@@ -124,12 +140,12 @@ nav {
      border: 1pc solid #ebdbd5;
      max-width: 97%;    
 }
-   /* FIN carga de receta*/
+ FIN carga de receta*/
 
    /*OTRAS RECETAS*/
 
 .article2{
-   width: 90%;
+   width: 99%;
    margin: 5px;
    border: 1px solid #000000;
    overflow: hidden;
@@ -141,10 +157,15 @@ nav {
     flex-wrap:wrap;
     justify-content: space-evenly;
     align-items: flex-start;
+    margin: 5px;
+}
+
+.col{
+    padding: 10px;
 }
 
 .img_receta{
-    width: 300px;
+    
     margin: 10px;
     border: 5px solid rgb(211, 184, 184);
 }
@@ -172,6 +193,7 @@ footer{
         flex-direction: column;
         justify-content: center;
         transition: transform 0.3s ease;
+        height: 312px;
     }
 
     .logo
@@ -202,35 +224,44 @@ footer{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        background-color: #fdd7c9;
+        background-color: #fbdace;
         border-top: 2px solid black;
         width: 100vw;
+        height: auto;
     }
 
     .li{
        margin: 0px;
-       padding: 10px;   
+       padding: 10px;
     }
 
 /*FIN ENCABEZADO*/
 
- main {
+ #cont{
         display: flex;
-        justify-content: row;
         Overflow: hidden;
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
     }
 
 /*FORMULARIO BUSQUEDA*/ 
     #busca{
-    width: 50%;
-    height: 5px;
+    width: auto;
+    height: 120px;
+    }
+    .navbar{
+    width: unset;
     }
 /*FIN FORMULARIO BUSQUEDA*/
 
     #cuerpo{
     display: flex;
     flex-direction: column;
-    } 
+     width: 100%;
+    margin: 0%;
+    padding: 0%; 
+} 
 
     h4{
       font-size: small;
@@ -239,7 +270,7 @@ footer{
       text-align: center;
     }
 
-/*CARGA RECETA*/ 
+/*CARGA RECETA 
     #carga{
     display: flex;
     justify-content: flex-end;
@@ -259,28 +290,28 @@ footer{
       display: flex;
     }
 
-/*FIN CARGA RECETA*/ 
+FIN CARGA RECETA*/ 
 
 /*OTRAS RECETAS*/
     .article2{
       width: auto;
     }
-
     #cont_img{
     display:flex;
     flex-wrap:wrap;
-    justify-content: flex-start;
-    justify-content: space-evenly;
-    align-items: flex-start;
+    width: auto;
+    height: 500%;
     }
 
     .img_receta{
-         width: 150px;
+         max-width:  80%;
+         overflow: hidden;  
          margin: 5px;
          padding: 0px;
          border: 5px solid rgb(211, 184, 184);
       }
 
-     
+ 
 
+/* FIN OTRAS RECETAS*/
 }
